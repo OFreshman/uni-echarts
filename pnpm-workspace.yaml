@@ -68,7 +68,7 @@ catalogs:
     vitepress-plugin-llms: ^1.11.1
   frontend:
     "@vue/runtime-core": ~3.4.38
-    color: ^5.0.3
+    colord: ^2.9.3
     echarts: ^6.0.0
     monaco-editor: ~0.54.0
     pinia: 2.2.4
@@ -111,7 +111,7 @@ catalogs:
     es-toolkit: ^1.45.1
     magic-string: ^0.30.21
   xiaohe:
-    "@xiaohe01/catalog-rules": ^0.0.3
+    "@xiaohe01/catalog-rules": ^0.0.4
     "@xiaohe01/eslint-config": ^5.6.0
     "@xiaohe01/stylelint-config": ^3.6.0
     "@xiaohe01/tsconfig": ^3.1.0

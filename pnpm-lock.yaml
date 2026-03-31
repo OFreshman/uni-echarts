@@ -143,9 +143,9 @@ catalogs:
     '@vue/runtime-core':
       specifier: ~3.4.38
       version: 3.4.38
-    color:
-      specifier: ^5.0.3
-      version: 5.0.3
+    colord:
+      specifier: ^2.9.3
+      version: 2.9.3
     echarts:
       specifier: ^6.0.0
       version: 6.0.0
@@ -248,8 +248,8 @@ catalogs:
       version: 0.30.21
   xiaohe:
     '@xiaohe01/catalog-rules':
-      specifier: ^0.0.3
-      version: 0.0.3
+      specifier: ^0.0.4
+      version: 0.0.4
     '@xiaohe01/eslint-config':
       specifier: ^5.6.0
       version: 5.6.0
@@ -278,7 +278,7 @@ importers:
         version: 24.12.0
       '@xiaohe01/catalog-rules':
         specifier: catalog:xiaohe
-        version: 0.0.3(pncat@0.11.0)
+        version: 0.0.4(pncat@0.11.0)
       '@xiaohe01/eslint-config':
         specifier: catalog:xiaohe
         version: 5.6.0(@typescript-eslint/rule-tester@8.57.1(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/typescript-estree@8.57.1(typescript@5.9.3))(@typescript-eslint/utils@8.57.1(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-sfc@3.5.30)(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3)(vitest@3.2.4(@types/debug@4.1.13)(@types/node@24.12.0)(jiti@2.6.1)(jsdom@16.7.0(bufferutil@4.1.0))(sass@1.78.0)(terser@5.46.1)(tsx@4.21.0)(yaml@2.8.2))
@@ -339,9 +339,9 @@ importers:
       '@vueuse/core':
         specifier: catalog:utils
         version: 12.8.2(typescript@5.9.3)
-      color:
+      colord:
         specifier: catalog:frontend
-        version: 5.0.3
+        version: 2.9.3
       monaco-editor:
         specifier: catalog:frontend
         version: 0.54.0
@@ -3716,8 +3716,8 @@ packages:
   '@vueuse/shared@12.8.2':
     resolution: {integrity: sha512-dznP38YzxZoNloI0qpEfpkms8knDtaoQ6Y/sfS0L7Yki4zh40LFHEhur0odJC6xTHG5dxWVPiUWBXn+wCG2s5w==}
 
-  '@xiaohe01/catalog-rules@0.0.3':
-    resolution: {integrity: sha512-T4NUYjYs/UkuDsSrFTs1RPu24+04Y7EJQYz+v9o0JGqrmxrz/APM+TnHICpGVszm8smMK1BGgkQQicmE3+Qs1A==}
+  '@xiaohe01/catalog-rules@0.0.4':
+    resolution: {integrity: sha512-/ia34S36UmmfYusmkK5wr+Hq9YLFBLjsP2lBx3ih0wgUGtKMealGoSn+tVsfPOz3N7HWhiCqXT2tQyQi1Js69g==}
     peerDependencies:
       pncat: '*'
 
@@ -13142,7 +13142,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@xiaohe01/catalog-rules@0.0.3(pncat@0.11.0)':
+  '@xiaohe01/catalog-rules@0.0.4(pncat@0.11.0)':
     dependencies:
       pncat: 0.11.0
 
