@@ -49,6 +49,8 @@
       :id="canvasId"
       class="uni-echarts__canvas"
       :canvas-id="canvasId"
+      :width="canvasNodeSize.width"
+      :height="canvasNodeSize.height"
       :disable-scroll="props.disableScroll"
       @touchstart="touch.onStart"
       @touchmove="touch.onMove"
@@ -183,7 +185,17 @@ const canvasRect = reactive({
   top: 0,
   left: 0,
   width: 0,
-  height: 0
+  height: 0,
+  dpr: 1
+});
+
+const canvasNodeSize = computed(() => {
+  const { width, height, dpr } = canvasRect;
+
+  return {
+    width: width * dpr,
+    height: height * dpr
+  };
 });
 
 function getFirstTouch(touches) {
@@ -299,6 +311,7 @@ async function init(option) {
   canvasRect.left = context.left;
   canvasRect.width = context.width;
   canvasRect.height = context.height;
+  canvasRect.dpr = context.dpr;
 
   setupEchartsCanvas(echarts, {
     canvas: context.canvas,
