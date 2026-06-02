@@ -10,6 +10,7 @@
 - [toolbox.feature.saveAsImage](https://echarts.apache.org/zh/option.html#toolbox.feature.saveAsImage)
 - [series-map](https://echarts.apache.org/zh/option.html#series-map)
 - [echarts-gl](https://github.com/ecomfe/echarts-gl)
+- [series-heatmap](https://echarts.apache.org/zh/option.html#series-heatmap) 暂不支持 echarts 6.1，请使用 6.0 及以下版本
 
 ## Could not resolve "zrender/xxx"
 
